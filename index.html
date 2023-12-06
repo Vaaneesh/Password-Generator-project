@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="imgs/generate.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
         <div class="display">
             <input type="text" id="password" placeholder="password">
             <img src="imgs/copy.png" onclick="copyPass()">
+            <div id="copyNoti" class="hidden">Password copied!</div>
         </div>
         <button onclick="createPass()"> <img src="imgs/generate.png">Generate Password</button>
     </div>

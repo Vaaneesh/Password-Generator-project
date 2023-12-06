@@ -20,6 +20,16 @@ function createPass(){
     passwordbox.value=password;
 }
 function copyPass(){
+    var copynotification=document.getElementById("copyNoti");
+
+    if(passwordbox.value.trim() === ''){
+        return;
+    }
+    
     passwordbox.select();
     navigator.clipboard.writeText(passwordbox.value);
+    copynotification.style.display="block";
+    setTimeout(()=>{
+        copynotification.style.display="none";
+    }, 2000);
 }
